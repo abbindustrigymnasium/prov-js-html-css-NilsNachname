@@ -12,7 +12,16 @@
 
     <script>
         // Här ska din JavaScript kod vara
-
+        const politiker = [
+            {id: 1, firstName: 'Stefan', lastName: 'Löven'},
+            {id: 2, firstName: 'Annie', lastName: 'Lööv'},
+            {id: 3, firstName: 'Nyamko', lastName: 'Sabuni'},
+            {id: 4, firstName: 'Jimmie', lastName: 'Åkesson'},
+            {id: 5, firstName: 'Per', lastName: 'Bolund'},
+        ];
+        politiker.forEach((person) => {
+            console.log(`${person.firstName} - ${person.lastName}`);
+        });
 
     </script>
 </body>

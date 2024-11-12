@@ -7,10 +7,17 @@
 
 <body>
     <!-- Här ska din HTML kod vara -->
+    <input id="media" type="url"/></br>
+    <input id="submit" type="button" onclick="showImage()" value="submit"/>
+    <img id="bild"></img>
 
     <script>
         // Här ska din JavaScript kod vara
-
+        let media = document.getElementById("media")
+        let image = document.getElementById("bild")
+        function showImage() {
+            image.src = media.value;
+        }
 
     </script>
 </body>
